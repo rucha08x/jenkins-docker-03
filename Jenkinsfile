@@ -5,9 +5,6 @@ pipeline {
 	}
 
 	stages {
-		stage("checkout") {
-			checkout scm
-		}
 		stage("build") {
 			sh 'javac HelloWorld.java'
 		}
